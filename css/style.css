@@ -9,6 +9,27 @@ body {
     background-color: #ffff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 .accent {
     color: #2E2F42;
 }
@@ -99,7 +120,7 @@ body {
 }
 
 
-/* ----------------------- SECTION------------------------- */
+/* -----------------------TITLE SECTION------------------------- */
 
 .title {
     font-size: 36px;
@@ -128,6 +149,52 @@ body {
 }
 
 
+.headline {
+    background-color: #2e2f42;
+
+    padding: 188px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.headline-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #fff;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.headline-btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4d5ae5;
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.headline-btn:hover,
+.headline-btn:focus {
+    background-color: #404bbf;
+}
+
+
 /* -----------------------TEAM SECTION-------------------------- */
 .team-section {
     background-color: #F4F4FD;
@@ -138,55 +205,63 @@ body {
     background-color: #FFFFFF;
 }
 
-/* -----------------------FOOTER------------------------- */
-.footer {
-    background-color: #2E2F42;
-    color: #F4F4FD;
+.team {
+    background: #f4f4fd;
+    padding: 120px 0;
+    width: 100%;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    margin-bottom: 72px;
+    text-transform: capitalize;
+
+}
+
+.team-menu-list {
+    display: flex;
+    gap: 24px;
+}
+
+.list-item {
+    padding: 32px 0;
+    text-align: center;
+}
+
+
+.team-menu-item {
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 3 * 24px) / 4);
+}
+
+.team-image {
+    background-color: #fff
+}
+
+.team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.team-menu-text {
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
 }
 
-
-.footer-logo{
-    color: #4d5ae5;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: left;
-}
-
-.logo-in-footer {
-    color:#F4F4FD;
-} 
-
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-ul,
-ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    display: block;
-}
 
 /*-------------Header------------------*/
 
@@ -278,54 +353,6 @@ img {
 }
 
 
-/*-----------Section Title-----------*/
-
-.headline {
-    background-color: #2e2f42;
-
-    padding: 188px 0;
-    margin: 0 auto;
-    width: 100%;
-}
-
-
-.headline-title {
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    color: #fff;
-    max-width: 496px;
-    margin: 0 auto;
-    margin-bottom: 48px;
-    text-align: center;
-    padding-bottom: 48px;
-}
-
-.headline-btn {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #fff;
-    background-color: #4d5ae5;
-    border-radius: 4px;
-    min-width: 169px;
-    height: 56px;
-    display: block;
-    margin: 0 auto;
-    border: none;
-    cursor: pointer;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-
-.headline-btn:hover,
-.headline-btn:focus {
-    background-color: #404bbf;
-}
-
-
 /*--------------------Content---------------*/
 
 .visually-hidden {
@@ -375,67 +402,7 @@ img {
 }
 
 
-/*-----------------Our Team----------------*/
-
-.team {
-    background: #f4f4fd;
-    padding: 120px 0;
-    width: 100%;
-}
-
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-align: center;
-    margin-bottom: 72px;
-    text-transform: capitalize;
-
-}
-
-.team-menu-list {
-    display: flex;
-    gap: 24px;
-}
-
-.list-item {
-    padding: 32px 0;
-    text-align: center;
-}
-
-
-.team-menu-item {
-    background-color: #FFFFFF;
-    border-radius: 0px 0px 4px 4px;
-    width: calc((100% - 3 * 24px) / 4);
-}
-
-.team-image {
-    background-color: #fff
-}
-
-.team-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;
-    text-align: center;
-}
-
-.team-menu-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    text-align: center;
-}
-
-
-/*---------------Our Portfol----------------*/
+/*---------------Portfolio Section----------------*/
 
 .portfolio {
     padding-top: 120px;
@@ -465,10 +432,6 @@ img {
     gap: 48px 24px;
 }
 
-.portfolio-item {}
-
-
-.portfolio-image {}
 
 .portfolio-subtitle {
     font-weight: 500;
@@ -491,26 +454,37 @@ img {
 
 
 /*---------------Footer--------------------*/
-
 .footer {
-    background-color: #2e2f42;
+    background-color: #2E2F42;
+    color: #F4F4FD;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     padding-top: 100px;
     padding-bottom: 100px;
     display: inline-block;
     width: 100%;
 }
 
+
 .footer-logo {
+    color: #4d5ae5;
     font-family: "Raleway", sans-serif;
-    font-weight: 700;
+    text-transform: uppercase;
     font-size: 18px;
+    font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
+    text-align: left;
     margin-bottom: 16px;
     display: inline-block;
+}
 
+.logo-in-footer {
+    color:#F4F4FD;
+} 
+
+img {
+    display: block;
 }
 
 .footer-logo-color {
